@@ -41,11 +41,10 @@
     <section class="hero" id="home" style="min-height: 50vh; padding-top: 120px;">
         <div class="container">
             <div class="hero-content" style="text-align: center;">
-                <h1>Sports Club Management Platform</h1>
+                <h1>Sports Club Management</h1>
                 <p class="subtitle">
                     Comprehensive mobile-first platform for cricket clubs. Manage players, fixtures, availability, live
-                    scoring,
-                    training, payments, and communications - all in one place.
+                    scoring, training, payments, and communications - all in one place.
                 </p>
                 <div class="hero-cta" style="margin-top: var(--space-lg);">
                     <a href="../index.html#projects" class="btn btn-secondary">← Back to Projects</a>
@@ -54,100 +53,193 @@
         </div>
     </section>
 
-    <!-- Project Details -->
+    <!-- The Problem Section -->
     <section class="services" style="background: var(--bg-secondary);">
         <div class="container">
             <div class="section-header reveal">
-                <h2>About the Project</h2>
+                <h2>The Club Management Challenge</h2>
             </div>
 
             <div class="contact-content reveal" style="max-width: 900px; margin: 0 auto; text-align: left;">
                 <p
                     style="font-size: 1.1rem; line-height: 1.8; margin-bottom: var(--space-lg); color: var(--text-secondary);">
-                    Built specifically for cricket clubs, this platform streamlines all aspects of club management from
-                    fixture
-                    scheduling to live match scoring. Club administrators, captains, and players can coordinate
-                    seamlessly,
-                    ensuring smooth operations and better team performance.
+                    Running a cricket club involves juggling countless tasks: coordinating player availability,
+                    scheduling
+                    matches, tracking statistics, managing payments, and keeping everyone informed. Traditional methods
+                    using spreadsheets, WhatsApp groups, and email chains lead to confusion, missed communications, and
+                    administrative headaches.
                 </p>
 
-                <h3 style="margin-top: var(--space-xl); margin-bottom: var(--space-md);">Key Features</h3>
-                <div class="services-grid" style="margin-top: var(--space-lg);">
-                    <div class="service-card card reveal">
-                        <div class="service-icon">📅</div>
-                        <h3>Fixture Management</h3>
-                        <p>Schedule matches, manage opponents, track venues, and send automated reminders to players.
-                        </p>
-                    </div>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
+                    <strong>This platform streamlines everything</strong> into a single mobile app, making club
+                    management
+                    effortless for administrators while keeping players engaged and informed. From team selection to
+                    live
+                    match scoring, it's the complete solution for modern cricket clubs.
+                </p>
+            </div>
+        </div>
+    </section>
 
-                    <div class="service-card card reveal">
-                        <div class="service-icon">👥</div>
-                        <h3>Team Selection</h3>
-                        <p>Select teams based on availability, view player stats, and manage squad rotations
-                            efficiently.</p>
-                    </div>
-
-                    <div class="service-card card reveal">
-                        <div class="service-icon">✅</div>
-                        <h3>Availability Tracking</h3>
-                        <p>Players can mark their availability for upcoming fixtures with simple yes/no/maybe responses.
-                        </p>
-                    </div>
-
-                    <div class="service-card card reveal">
-                        <div class="service-icon">🏏</div>
-                        <h3>Live Match Scoring</h3>
-                        <p>Real-time scoring interface for tracking runs, wickets, overs, and match statistics during
-                            games.</p>
-                    </div>
-
-                    <div class="service-card card reveal">
-                        <div class="service-icon">🎯</div>
-                        <h3>Training Scheduler</h3>
-                        <p>Organize practice sessions, track attendance, and manage training programs.</p>
-                    </div>
-
-                    <div class="service-card card reveal">
-                        <div class="service-icon">💰</div>
-                        <h3>Payment Tracking</h3>
-                        <p>Monitor membership fees, match fees, and club expenses with integrated payment tracking.</p>
-                    </div>
-
-                    <div class="service-card card reveal">
-                        <div class="service-icon">💬</div>
-                        <h3>Team Communication</h3>
-                        <p>Group messaging, announcements, and notifications keep everyone informed and connected.</p>
-                    </div>
-
-                    <div class="service-card card reveal">
-                        <div class="service-icon">📊</div>
-                        <h3>Player Statistics</h3>
-                        <p>Track individual and team performance with comprehensive stats and analytics.</p>
-                    </div>
+    <!-- Feature Showcase 1: Team Management -->
+    <section class="services">
+        <div class="container">
+            <div
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-xl); align-items: center; max-width: 1200px; margin: 0 auto;">
+                <div class="reveal">
+                    <img src="../assets/club-team-management.png" alt="Team Roster Management"
+                        style="max-width: 400px; width: 100%; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
                 </div>
-
-                <h3 style="margin-top: var(--space-xl); margin-bottom: var(--space-md);">Technology Stack</h3>
-                <div style="display: flex; flex-wrap: wrap; gap: var(--space-sm); margin-top: var(--space-md);">
-                    <span class="tech-badge">React Native</span>
-                    <span class="tech-badge">Node.js</span>
-                    <span class="tech-badge">PostgreSQL</span>
-                    <span class="tech-badge">WebSockets</span>
-                    <span class="tech-badge">Push Notifications</span>
-                    <span class="tech-badge">Stripe</span>
+                <div class="reveal">
+                    <div class="service-icon" style="font-size: 3rem; margin-bottom: var(--space-md);">👥</div>
+                    <h2 style="margin-bottom: var(--space-md);">Team Roster Management</h2>
+                    <p
+                        style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: var(--space-md);">
+                        Manage your entire squad with detailed player profiles including roles, statistics, and
+                        availability status. Filter by position (batsman, bowler, all-rounder, wicket-keeper) and track
+                        performance metrics for informed team selection.
+                    </p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; color: var(--text-secondary);">✓ Player profiles with stats</li>
+                        <li style="padding: 0.5rem 0; color: var(--text-secondary);">✓ Role-based filtering</li>
+                        <li style="padding: 0.5rem 0; color: var(--text-secondary);">✓ Availability tracking</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Screenshot Section -->
+    <!-- Feature Showcase 2: Match Scheduling -->
+    <section class="services" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-xl); align-items: center; max-width: 1200px; margin: 0 auto;">
+                <div class="reveal" style="order: 2;">
+                    <img src="../assets/club-match-schedule.png" alt="Match Scheduling Interface"
+                        style="max-width: 400px; width: 100%; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
+                </div>
+                <div class="reveal" style="order: 1;">
+                    <div class="service-icon" style="font-size: 3rem; margin-bottom: var(--space-md);">📅</div>
+                    <h2 style="margin-bottom: var(--space-md);">Fixture Management</h2>
+                    <p
+                        style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: var(--space-md);">
+                        Schedule matches with complete details including opponent, venue, date, time, and match format
+                        (T20, ODI, Test). View upcoming fixtures and past results with scores. Automatic calendar
+                        integration and weather forecasts help with planning.
+                    </p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; color: var(--text-secondary);">✓ Upcoming & past matches</li>
+                        <li style="padding: 0.5rem 0; color: var(--text-secondary);">✓ Weather integration</li>
+                        <li style="padding: 0.5rem 0; color: var(--text-secondary);">✓ Calendar sync</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Showcase 3: Player Statistics -->
+    <section class="services">
+        <div class="container">
+            <div
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-xl); align-items: center; max-width: 1200px; margin: 0 auto;">
+                <div class="reveal">
+                    <img src="../assets/club-player-stats.png" alt="Player Statistics Dashboard"
+                        style="max-width: 400px; width: 100%; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
+                </div>
+                <div class="reveal">
+                    <div class="service-icon" style="font-size: 3rem; margin-bottom: var(--space-md);">📊</div>
+                    <h2 style="margin-bottom: var(--space-md);">Performance Analytics</h2>
+                    <p
+                        style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: var(--space-md);">
+                        Track comprehensive statistics for batting, bowling, and fielding. View career totals, averages,
+                        strike rates, and recent form. Visual charts show performance trends over time, helping identify
+                        strengths and areas for improvement.
+                    </p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; color: var(--text-secondary);">✓ Batting & bowling stats</li>
+                        <li style="padding: 0.5rem 0; color: var(--text-secondary);">✓ Performance charts</li>
+                        <li style="padding: 0.5rem 0; color: var(--text-secondary);">✓ Recent form tracking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Features -->
+    <section class="services" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Complete Club Management</h2>
+            </div>
+
+            <div class="services-grid" style="margin-top: var(--space-lg);">
+                <div class="service-card card reveal">
+                    <div class="service-icon">🏏</div>
+                    <h3>Live Match Scoring</h3>
+                    <p>Real-time scoring interface for tracking runs, wickets, overs, and match statistics during games.
+                    </p>
+                </div>
+
+                <div class="service-card card reveal">
+                    <div class="service-icon">✅</div>
+                    <h3>Availability Tracking</h3>
+                    <p>Players can mark their availability for upcoming fixtures with simple yes/no/maybe responses.</p>
+                </div>
+
+                <div class="service-card card reveal">
+                    <div class="service-icon">🎯</div>
+                    <h3>Training Scheduler</h3>
+                    <p>Organize practice sessions, track attendance, and manage training programs effectively.</p>
+                </div>
+
+                <div class="service-card card reveal">
+                    <div class="service-icon">💰</div>
+                    <h3>Payment Tracking</h3>
+                    <p>Monitor membership fees, match fees, and club expenses with integrated payment tracking.</p>
+                </div>
+
+                <div class="service-card card reveal">
+                    <div class="service-icon">💬</div>
+                    <h3>Team Communication</h3>
+                    <p>Group messaging, announcements, and notifications keep everyone informed and connected.</p>
+                </div>
+
+                <div class="service-card card reveal">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile-First Design</h3>
+                    <p>Native iOS and Android apps built with React Native for smooth performance on all devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
     <section class="services">
         <div class="container">
             <div class="section-header reveal">
-                <h2>App Preview</h2>
+                <h2>Technology & Platform</h2>
             </div>
-            <div style="text-align: center; margin-top: var(--space-xl);">
-                <img src="../assets/club-mgmt-preview.png" alt="Club Management App Interface"
-                    style="max-width: 400px; width: 100%; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
+
+            <div class="contact-content reveal" style="max-width: 900px; margin: 0 auto; text-align: left;">
+                <p
+                    style="font-size: 1.1rem; line-height: 1.8; margin-bottom: var(--space-lg); color: var(--text-secondary);">
+                    Built as a cross-platform mobile application using React Native, ensuring consistent experience
+                    across
+                    iOS and Android devices. Real-time features powered by WebSockets for instant updates during live
+                    matches.
+                </p>
+
+                <h3 style="margin-top: var(--space-xl); margin-bottom: var(--space-md);">Tech Stack</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: var(--space-sm); margin-top: var(--space-md);">
+                    <span class="tech-badge">React Native</span>
+                    <span class="tech-badge">TypeScript</span>
+                    <span class="tech-badge">Node.js</span>
+                    <span class="tech-badge">PostgreSQL</span>
+                    <span class="tech-badge">WebSockets</span>
+                    <span class="tech-badge">Push Notifications</span>
+                    <span class="tech-badge">Stripe</span>
+                    <span class="tech-badge">Expo</span>
+                </div>
             </div>
         </div>
     </section>
