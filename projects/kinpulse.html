@@ -38,7 +38,7 @@
     </nav>
 
     <!-- Project Hero -->
-    <section class="hero" id="home" style="min-height: 50vh; padding-top: 120px;">
+    <section class="hero" id="home" style="min-height: 40vh; padding-top: 120px; position: relative;">
         <div class="container">
             <div class="hero-content" style="text-align: center;">
                 <h1>KinPulse</h1>
@@ -50,6 +50,13 @@
                     <a href="../index.html#projects" class="btn btn-secondary">← Back to Projects</a>
                 </div>
             </div>
+        </div>
+        <div class="scroll-indicator" onclick="window.scrollBy({top: window.innerHeight * 0.6, behavior: 'smooth'})">
+            <span>Scroll to explore</span>
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3">
+                </path>
+            </svg>
         </div>
     </section>
 
