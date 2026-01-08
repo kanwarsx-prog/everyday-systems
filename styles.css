@@ -16,8 +16,10 @@
     --color-bg-overlay: rgba(255, 255, 255, 0.85);
 
     --color-text-primary: #1a1a2e;
-    --color-text-secondary: #4a4a5e;
-    --color-text-tertiary: #737388;
+    --color-text-secondary: #3a3a4e;
+    /* Darkened for better contrast */
+    --color-text-tertiary: #5a5a6e;
+    /* Darkened for better contrast */
     --color-text-light: #ffffff;
 
     /* Vibrant Accent Colors */
@@ -777,12 +779,19 @@ section {
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         transform: translateX(-50%) translateY(0);
     }
+
     40% {
         transform: translateX(-50%) translateY(-10px);
     }
+
     60% {
         transform: translateX(-50%) translateY(-5px);
     }
