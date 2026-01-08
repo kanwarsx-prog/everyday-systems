@@ -207,6 +207,11 @@ p {
     line-height: var(--line-height-relaxed);
 }
 
+.service-card p {
+    color: var(--color-text-secondary);
+    /* Changed from tertiary for better contrast */
+}
+
 a {
     color: var(--color-accent-primary);
     text-decoration: none;
