@@ -68,39 +68,83 @@
             <div class="contact-content reveal">
                 <h2>Get In Touch</h2>
                 <p>Whether you're looking to transform your enterprise platforms, implement ServiceNow or Salesforce
-                    solutions,
-                    or need strategic guidance on digital transformation programmes, I'm here to help.</p>
+                    solutions, or need strategic guidance on digital transformation programmes, I'm here to help.</p>
 
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                        </svg>
-                        <span>Sushil Kanwar</span>
+                <!-- Contact Form -->
+                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form"
+                    style="max-width: 600px; margin: var(--space-xl) auto;">
+                    <!-- Honeypot for spam protection -->
+                    <p style="display: none;">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+
+                    <input type="hidden" name="form-name" value="contact">
+
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
                     </div>
 
-                    <div class="contact-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
-                        <a href="mailto:skanwar@everydaysystems.co.uk">skanwar@everydaysystems.co.uk</a>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
                     </div>
 
-                    <div class="contact-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                        <span>Serving clients worldwide</span>
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required
+                            placeholder="What would you like to discuss?">
                     </div>
-                </div>
 
-                <div class="hero-cta" style="margin-top: var(--space-xl);">
-                    <a href="mailto:skanwar@everydaysystems.co.uk" class="btn btn-primary">Send me an email</a>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required
+                            placeholder="Tell me about your project or inquiry..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+
+                    <p
+                        style="margin-top: var(--space-md); font-size: var(--font-size-sm); color: var(--text-secondary); text-align: center;">
+                        By submitting this form, you agree to be contacted regarding your inquiry.
+                        Your information will not be shared with third parties.
+                    </p>
+                </form>
+
+                <!-- Alternative Contact Methods -->
+                <div
+                    style="margin-top: var(--space-2xl); padding-top: var(--space-xl); border-top: 1px solid var(--color-border);">
+                    <h3 style="text-align: center; margin-bottom: var(--space-lg);">Or reach out directly</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                            <span>Sushil Kanwar</span>
+                        </div>
+
+                        <div class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <a href="mailto:skanwar@everydaysystems.co.uk">skanwar@everydaysystems.co.uk</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>Serving clients worldwide</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
