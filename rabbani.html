@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Cholesterol has been wrongly framed as a danger when it is in fact a cornerstone of human health. Explore the truth about natural fats and seed oils.">
+    <title>The Demonisation of Cholesterol | Axis of Truth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --color-text-primary: #1a1a1a;
+            --color-text-secondary: #333333;
+            --color-text-tertiary: #666666;
+            --color-bg-primary: #ffffff;
+            --color-bg-secondary: #f9f9f9;
+            --color-accent: #2c3e50;
+            --font-serif: 'Libre Baskerville', serif;
+            --font-sans: 'Inter', sans-serif;
+            --max-width: 800px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+            background: var(--color-bg-primary);
+            overflow-x: hidden;
+            /* Prevent horizontal scroll on mobile */
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: var(--font-serif);
+            color: var(--color-text-primary);
+            line-height: 1.3;
+        }
+
+        a {
+            color: var(--color-accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        a:hover {
+            border-bottom-color: var(--color-accent);
+        }
+
+        /* Hero Section */
+        .article-hero {
+            height: 45vh;
+            /* Reduced height as requested */
+            min-height: 350px;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/natural_fats_hero.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 2rem;
+            z-index: 1;
+        }
+
+        .article-hero h1 {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            color: white;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .article-meta {
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            opacity: 0.95;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* Content Layout */
+        .container {
+            max-width: 960px;
+            /* Slightly wider to accommodate floated images */
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .article-content {
+            padding: 3rem 0;
+            font-size: 1.125rem;
+        }
+
+        /* Typography & Spacing */
+        .article-content p {
+            margin-bottom: 1.5em;
+        }
+
+        .article-content h2 {
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 0.8em;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--color-bg-secondary);
+            clear: both;
+            /* Important: Headers clear floats */
+        }
+
+        .article-content ul {
+            margin-bottom: 1.5em;
+            padding-left: 1.2em;
+            list-style-type: none;
+            overflow: hidden;
+        }
+
+        .article-content li {
+            margin-bottom: 0.8em;
+            position: relative;
+            padding-left: 1.5em;
+        }
+
+        .article-content li::before {
+            content: "•";
+            color: var(--color-accent);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .article-content strong {
+            color: var(--color-text-primary);
+            font-weight: 600;
+        }
+
+        /* Highlights */
+        .highlight-box {
+            background: var(--color-bg-secondary);
+            border-left: 4px solid var(--color-accent);
+            padding: 2rem;
+            margin: 2.5rem 0;
+            border-radius: 4px;
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            font-style: italic;
+            clear: both;
+        }
+
+        /* Images */
+        .article-image {
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            overflow: visible;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            background: white;
+        }
+
+        .article-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .article-image figcaption {
+            padding: 0.8rem 1rem;
+            font-size: 0.9rem;
+            color: var(--color-text-tertiary);
+            font-style: italic;
+            text-align: center;
+            background: #fdfdfd;
+            border-radius: 0 0 8px 8px;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        /* Desktop Layout (Standard) */
+        @media (min-width: 800px) {
+            .float-right {
+                float: right;
+                width: 45%;
+                margin-left: 2.5rem;
+                margin-bottom: 1.5rem;
+                margin-top: 0.5rem;
+            }
+
+            .float-left {
+                float: left;
+                width: 45%;
+                margin-right: 2.5rem;
+                margin-bottom: 1.5rem;
+                margin-top: 0.5rem;
+            }
+        }
+
+        /* Mobile Layout */
+        @media (max-width: 799px) {
+            .article-hero {
+                height: 40vh;
+                /* Even smaller for mobile */
+                min-height: 300px;
+            }
+
+            .article-hero h1 {
+                font-size: 2rem;
+                /* Smaller heading on mobile */
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .article-content {
+                padding: 2rem 0;
+                font-size: 1.05rem;
+                /* Slightly smaller text for mobile */
+            }
+
+            .article-image,
+            .float-right,
+            .float-left {
+                width: 100% !important;
+                float: none !important;
+                margin-left: 0;
+                margin-right: 0;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .highlight-box {
+                padding: 1.5rem;
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Footer */
+        .simple-footer {
+            border-top: 1px solid #eee;
+            padding: 3rem 0;
+            text-align: center;
+            color: var(--color-text-tertiary);
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <header class="article-hero">
+        <div class="hero-content">
+            <div class="article-meta">Axis of Truth presents</div>
+            <h1>The Demonisation of Cholesterol</h1>
+            <p style="font-size: 1.1rem; margin-top: 0.5rem; opacity: 0.9;">How a Vital Substance Became the Enemy of
+                Human Health</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <article class="container">
+        <div class="article-content">
+            <p>For decades now, cholesterol has been portrayed as a silent killer, an internal saboteur blamed for heart
+                disease, stroke, and a wide range of modern ailments. Yet this narrative did not arise organically from
+                timeless wisdom or careful observation of human health across history, but rather from a narrow
+                scientific hypothesis that hardened into dogma. It was institutionalised, commercialised, and eventually
+                enforced through public health policy, medical training, food manufacturing, and pharmaceutical
+                intervention.</p>
+
+            <div class="highlight-box">
+                <p><strong>Cholesterol is not an invader, it is not a toxin, it is not optional and it is one of the
+                        most essential substances in the human body, so fundamental that without it, life as we know it
+                        cannot function.</strong></p>
+            </div>
+
+            <h2>Cholesterol as a Cornerstone</h2>
+
+            <!-- Brain Image: Float Right -->
+            <figure class="article-image float-right">
+                <img src="assets/lipid_brain_vitality.png"
+                    alt="Artistic representation of cholesterol's role in brain health">
+                <figcaption>Cholesterol is indispensable to the brain, supporting cognition, memory, and perception.
+                </figcaption>
+            </figure>
+
+            <p>Cholesterol plays a central role in the structure, development, and maintenance of the human organism. It
+                is a primary component of every cell membrane, giving cells their integrity, flexibility, and ability to
+                communicate.</p>
+
+            <p>It is indispensable to the brain, which is itself composed of a remarkably high proportion of cholesterol
+                and fat, reflecting the reality that cognition, memory, mood, and perception are lipid-dependent
+                processes. Without adequate cholesterol, these delicate neural networks simply cannot function at their
+                peak capacity.</p>
+
+            <p>Cholesterol is required for the synthesis of steroid hormones, including testosterone, oestrogen,
+                progesterone, cortisol, and aldosterone, all of which govern libido, fertility, stress response, immune
+                regulation, energy balance, and emotional stability.</p>
+
+            <p>It is also essential for the production of vitamin D, which functions not merely as a vitamin but as a
+                hormone affecting immunity, bone health, and neurological resilience. To reduce cholesterol
+                indiscriminately is therefore not to remove a danger, but to weaken multiple systems at once; quietly,
+                slowly, and cumulatively.</p>
+
+            <h2>The Cost of Suppressing Cholesterol</h2>
+            <p>When cholesterol levels are aggressively reduced, whether through dietary manipulation or pharmacological
+                intervention, the consequences ripple outward. Libido declines, not as an abstract side effect but
+                because the raw material for sex hormones has been constrained. Cognitive sharpness dulls, memory
+                formation weakens, and emotional regulation becomes unstable.</p>
+
+            <p>The brain does not thrive on glucose alone. It requires fat, and it requires cholesterol. When these are
+                chronically restricted or replaced with unstable industrial substitutes, the consequences should not
+                surprise us.</p>
+
+            <h2>Seed Oils and the Industrialisation of Food</h2>
+
+            <!-- Seed Oils Image: Float Left -->
+            <figure class="article-image float-left">
+                <img src="assets/seed_oils_vs_butter.png"
+                    alt="Industrial seed oils contrasted with natural butter and ghee">
+                <figcaption>The modern diet has replaced stable, ancestral animal fats with highly processed industrial
+                    seed oils.</figcaption>
+            </figure>
+
+            <p>One of the most damaging shifts in modern nutrition has been the widespread replacement of traditional
+                animal fats with industrial seed oils. These oils, derived from crops such as rapeseed, soybean,
+                sunflower, corn, and cottonseed, are not extracted gently or naturally, but through intensive chemical
+                processing involving high heat, solvents, bleaching, and deodorisation.</p>
+
+            <p>By the time these oils reach supermarket shelves, they bear little resemblance to the original seed. They
+                are highly prone to oxidation, particularly when heated, and they introduce unstable fatty acids into
+                the body that are not well matched to human evolutionary biology.</p>
+
+            <p>In contrast, cold-pressed plant oils such as olive oil can be beneficial when used appropriately,
+                particularly for cold applications like dressings or light finishing, but even these degrade when
+                exposed to high temperatures and should not be treated as universal cooking fats.</p>
+
+            <p>For high-heat cooking, the most stable and historically consistent fats are animal fats such as butter,
+                ghee, tallow, and lard, which have nourished human populations for millennia without the epidemic of
+                metabolic disease we see today.</p>
+
+            <h2>Processed Food, Degeneration, and Dependency</h2>
+            <p>The dramatic rise in degenerative conditions such as dementia, metabolic syndrome, chronic inflammation,
+                and hormonal imbalance parallels the rise of processed food, seed oils, and the decline of home cooking
+                using simple, recognisable ingredients.</p>
+
+            <p>This is not merely a nutritional issue; it is systemic. When natural health declines, dependency
+                increases. Dependency on medication, dependency on medical systems, dependency on pharmaceutical
+                intervention, and dependency on institutions that profit from chronic illness rather than the
+                cultivation of robust health.</p>
+
+            <h2>Practical Steps Toward Reclaiming Health</h2>
+
+            <!-- Rustic Kitchen Image: Float Right -->
+            <figure class="article-image float-right">
+                <img src="assets/rustic_whole_foods_kitchen.png"
+                    alt="Rustic kitchen with whole foods like eggs, meat, and milk">
+                <figcaption>Returning to simple, whole ingredients that are recognisable and nourishing is the first
+                    step.</figcaption>
+            </figure>
+
+            <p>Reversing this trajectory does not require extremism or obsession, but rather a return to grounded
+                practices that were once ordinary.</p>
+
+            <ul>
+                <li><strong>Importantly, reconsider Statins:</strong> They can reduce your capabilities to live a
+                    fruitful life. Life is not about endless focus on longevity, it is about quality.</li>
+                <li><strong>Cook more meals at home:</strong> Use simple ingredients that you understand and recognise,
+                    and treat eating out as an occasional pleasure rather than a daily norm.</li>
+                <li><strong>Buy staple foods in bulk:</strong> Store them well, and reduce reliance on packaged
+                    convenience products, which are almost always more expensive.</li>
+                <li><strong>Favour simple dishes:</strong> Made from whole foods, which tend to be both more satisfying
+                    and more nourishing than complex industrial creations.</li>
+                <li><strong>Drink clean water:</strong> Avoid additives such as fluoride, and filter when you can.</li>
+                <li><strong>Choose quality dairy:</strong> Move away from homogenised milk if tolerated alternatives are
+                    available.</li>
+                <li><strong>Use fats wisely:</strong> Use plant oils primarily for cold meals such as salads, and
+                    reserve animal fats for cooking.</li>
+                <li><strong>Choose butter:</strong> Over synthetic spreads, which are often little more than emulsified
+                    seed oils with additives.</li>
+            </ul>
+
+            <p>These choices are not about nostalgia or rebellion; they are about alignment with how the human body
+                actually works.</p>
+
+            <h2>Closing Reflection</h2>
+            <p>The weaponisation of food, the distortion of nutrition science, and the expansion of pharmaceutical
+                dependency are coordinated expressions of a deeper system that seeks compliance, weakness, and
+                dependence. When food is engineered to inflame rather than nourish, when cholesterol is demonised, and
+                when synthetic substitutes replace natural fats, the outcome is predictable.</p>
+
+            <div class="highlight-box">
+                <p><strong>Cognitive decline increases. Libido collapses. Emotional resilience weakens. Memory
+                        fractures. Anxiety and despair become normalised.</strong></p>
+            </div>
+
+            <p>Health, clarity, and sovereignty do not come from compliance with engineered systems; they emerge
+                naturally when the human realigns with how they were created to live. The answer is return. Return to
+                simple food. Return to the body. Return to natural rhythms. Return to discernment. Return to gratitude.
+                Return to the Source.</p>
+
+            <p>The war on the spark only succeeds when the spark is forgotten. Remembering is an act of resistance.</p>
+
+        </div>
+    </article>
+
+    <!-- Simple Footer -->
+    <footer class="simple-footer">
+        <div class="container">
+            <p>&copy; 2024 Axis of Truth. Dedicated to the restoration of natural wisdom.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
