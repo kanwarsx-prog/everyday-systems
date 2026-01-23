@@ -86,76 +86,140 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero" id="home" style="padding-top: 140px;">
-    <div class="container">
+  <section class="hero" id="home">
+    <div class="container" style="position: relative; z-index: 2;">
       <div class="hero-content">
-        <h1>Digital Transformation & Platform Delivery</h1>
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span>Available for Senior Leadership Roles</span>
+        </div>
+        <h1>
+          Architecting <span class="text-gradient">Digital Success</span><br>
+          at Enterprise Scale
+        </h1>
         <p class="subtitle">
-          Strategic leadership in enterprise platform solutions. Delivering business-critical transformations
-          across ServiceNow, Salesforce, and integrated enterprise ecosystems.
+          Strategic Product Leadership & Transformation. Delivering over £100M in platform value for global
+          organizations using ServiceNow and Salesforce.
         </p>
         <div class="hero-cta">
-          <a href="experience.html" class="btn btn-primary">View Professional Experience</a>
-          <a href="contact.html" class="btn btn-secondary">Discuss Your Transformation</a>
+          <a href="experience.html" class="btn btn-primary">
+            View Career Highlights
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="contact.html" class="btn btn-secondary">Book a Strategy Call</a>
         </div>
+
+        <!-- Quick Stats Row (Tablet/Desktop) -->
+        <div style="display: flex; gap: 3rem; margin-top: 4rem; opacity: 0.8;">
+          <div>
+            <div style="font-size: 2rem; font-weight: 700; color: white;">20+</div>
+            <div style="font-size: 0.875rem; color: var(--color-text-tertiary);">Years Experience</div>
+          </div>
+          <div>
+            <div style="font-size: 2rem; font-weight: 700; color: white;">£100M+</div>
+            <div style="font-size: 0.875rem; color: var(--color-text-tertiary);">Value Delivered</div>
+          </div>
+          <div>
+            <div style="font-size: 2rem; font-weight: 700; color: white;">Global</div>
+            <div style="font-size: 0.875rem; color: var(--color-text-tertiary);">Program Delivery</div>
+          </div>
+        </div>
+
       </div>
     </div>
     <img src="assets/hero-visual.png" alt="" class="hero-visual" aria-hidden="true" loading="lazy">
   </section>
 
-  <!-- Brief Introduction -->
-  <section class="services" style="background: var(--bg-secondary);">
+  <!-- Core Expertise / Services Preview -->
+  <section class="services" style="position: relative;">
     <div class="container">
       <div class="section-header reveal">
-        <h2>Enterprise Platform Delivery Excellence</h2>
-        <p>20+ years transforming global organizations through strategic platform solutions</p>
+        <h2>Expertise that <span class="text-gradient">Drives Growth</span></h2>
+        <p>Strategic leadership grounded in technical reality. Transforming complex enterprise challenges into
+          streamlined digital solutions.</p>
       </div>
 
-      <div class="contact-content reveal" style="max-width: 900px; margin: 0 auto; text-align: center;">
-        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: var(--space-xl); color: var(--text-secondary);">
-          Specializing in ServiceNow, Salesforce, and enterprise platform implementations with proven expertise in
-          leading multi-million pound programmes across UK, EMEA, APAC, and offshore locations.
-        </p>
+      <div class="services-grid">
+        <!-- Card 1 -->
+        <article class="service-card glass-card reveal" style="animation-delay: 0.1s;">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+              <line x1="8" y1="21" x2="16" y2="21" />
+              <line x1="12" y1="17" x2="12" y2="21" />
+            </svg>
+          </div>
+          <h3>Platform Strategy</h3>
+          <p>Specialist in ServiceNow & Salesforce ecosystems. Architecting scalable solutions that align IT
+            capabilities with business goals.</p>
+        </article>
 
-        <div class="hero-cta" style="justify-content: center;">
-          <a href="about.html" class="btn btn-primary">Learn More About Me</a>
-          <a href="services.html" class="btn btn-secondary">View Services</a>
-        </div>
+        <!-- Card 2 -->
+        <article class="service-card glass-card reveal" style="animation-delay: 0.2s;">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <h3>Program Leadership</h3>
+          <p>Delivering multi-million pound transformations. Managing cross-functional global teams to execute on time
+            and within budget.</p>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="service-card glass-card reveal" style="animation-delay: 0.3s;">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <h3>Risk & Governance</h3>
+          <p>Robust operational resilience. Ensuring enterprise compliance while maintaining agility in delivery and
+            procurement.</p>
+        </article>
+      </div>
+
+      <div class="hero-cta" style="justify-content: center; margin-top: 4rem;">
+        <a href="services.html" class="btn btn-secondary">Explore All Services</a>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
 
+  <!-- Contact Section -->
   <section class="contact" id="contact">
     <div class="container">
-      <div class="contact-content reveal">
-        <h2>Let's Discuss Your Transformation</h2>
-        <p>Have a digital transformation challenge? Let's explore how platform-led solutions can deliver value for your
-          organization.</p>
+      <div class="contact-box reveal">
+        <h2>Ready to Accelerate Your Digital Agenda?</h2>
+        <p style="max-width: 600px; margin: 0 auto 2rem auto;">
+          Whether you need interim program leadership or a complete platform strategy overhaul, I bring the expertise to
+          deliver certainty in uncertain times.
+        </p>
 
-        <div class="contact-info">
-          <div class="contact-item">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        <div class="hero-cta" style="justify-content: center;">
+          <a href="mailto:skanwar@everydaysystems.co.uk" class="btn btn-primary"
+            style="background: white; color: var(--color-accent-primary);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
             </svg>
-            <a href="mailto:skanwar@everydaysystems.co.uk">skanwar@everydaysystems.co.uk</a>
-          </div>
-
-          <div class="contact-item">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
-            <span>Serving clients worldwide</span>
-          </div>
-        </div>
-
-        <div class="hero-cta" style="margin-top: var(--space-xl);">
-          <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+            Email Me Directly
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"
+            style="border-color: rgba(255,255,255,0.4); color: white;">
+            Connect on LinkedIn
+          </a>
         </div>
       </div>
     </div>
