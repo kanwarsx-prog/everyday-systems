@@ -38,8 +38,8 @@
     --color-border-glow: rgba(99, 102, 241, 0.5);
 
     /* Gradients */
-    --gradient-hero: radial-gradient(circle at 15% 50%, rgba(79, 70, 229, 0.15), transparent 25%),
-        radial-gradient(circle at 85% 30%, rgba(6, 182, 212, 0.15), transparent 25%);
+    --gradient-hero: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.1), transparent 60%),
+        radial-gradient(circle at 50% 100%, rgba(6, 182, 212, 0.1), transparent 60%);
     --gradient-text: linear-gradient(135deg, #fff 0%, #cbd5e1 100%);
     --gradient-text-accent: linear-gradient(135deg, #818cf8 0%, #c084fc 100%);
     --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
@@ -99,6 +99,16 @@ body {
     background-attachment: fixed;
 }
 
+body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 32px 32px;
+    pointer-events: none;
+    z-index: -2;
+}
+
 /* === TYPOGRAPHY === */
 h1,
 h2,
@@ -117,6 +127,7 @@ h1 {
     line-height: 1.1;
     background: var(--gradient-text);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -151,6 +162,7 @@ a {
 .text-gradient {
     background: var(--gradient-text-accent);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
 }
@@ -287,19 +299,43 @@ a {
     align-items: center;
     position: relative;
     overflow: hidden;
+    background: radial-gradient(circle at 50% 50%, rgba(15, 23, 42, 0.4) 0%, rgba(3, 7, 18, 0.8) 100%);
+}
+
+/* Dynamic Ambient Glows */
+.hero::before,
+.hero::after {
+    content: '';
+    position: absolute;
+    width: 60vw;
+    height: 60vw;
+    max-width: 800px;
+    max-height: 800px;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: -1;
+    opacity: 0.6;
+    animation: floatGlow 20s infinite alternate ease-in-out;
 }
 
 .hero::before {
-    /* Glow Blob */
-    content: '';
-    position: absolute;
-    top: -10%;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.4) 0%, transparent 70%);
+    top: -20%;
     right: -10%;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
-    filter: blur(80px);
-    z-index: -1;
+}
+
+.hero::after {
+    background: radial-gradient(circle, rgba(6, 182, 212, 0.3) 0%, transparent 70%);
+    bottom: -20%;
+    left: -10%;
+    animation-delay: -10s;
+}
+
+@keyframes floatGlow {
+    0% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(-5%, 5%) scale(1.1); }
+    66% { transform: translate(5%, -5%) scale(0.9); }
+    100% { transform: translate(0, 0) scale(1); }
 }
 
 .hero-content {
@@ -343,18 +379,7 @@ a {
     flex-wrap: wrap;
 }
 
-.hero-visual {
-    position: absolute;
-    right: -10%;
-    /* Peek in from right */
-    top: 50%;
-    transform: translateY(-50%);
-    width: 800px;
-    opacity: 0.4;
-    mix-blend-mode: lighten;
-    pointer-events: none;
-    z-index: 0;
-}
+
 
 /* === SERVICES / BENTO GRID === */
 .services {
@@ -534,9 +559,5 @@ a {
         grid-template-columns: 1fr;
     }
 
-    .hero-visual {
-        width: 100%;
-        opacity: 0.2;
-        right: 0;
-    }
+
 }
